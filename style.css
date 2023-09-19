@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;700&display=swap');
+
 * {
     padding: 0%;
     margin: 0%;
@@ -8,15 +10,53 @@
 body {
     background-color: black;
     text-align: center;
+    font-family: 'Manrope', sans-serif;
 }
 
 header {
     width: 918px;
     height: 50px; 
     margin: 50px 162px auto 280px;
+    border-radius: 6px;
 }
 
-header ul {
+header ul ,a {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    list-style: none;
+    gap: 50px;
+}
+
+#logo_rocket img {
+    margin-left: -200px;
+}
+
+#btn-cafe button {
+    padding: 11px 38px;
+    border-radius: 6px;
+    background-color: transparent;
+    border: 1px solid #8257e5;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    width: 110vh;
+    height: auto;
+    margin: 30px 406px auto 346px;
+    font-weight: 700;
+}
+
+.title h1 {
+    text-align: center;
+    font-size: 80px;
+}
+
+#second-title {
+    font-size: 80px;
+    -webkit-text-stroke: 2px #8257e5;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.25);
+    letter-spacing: -3.4px;
 }
