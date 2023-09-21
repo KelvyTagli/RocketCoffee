@@ -14,15 +14,14 @@ body {
 }
 
 header {
-    width: 918px;
-    height: 50px; 
-    margin: 50px 162px auto 280px;
+    width: 908px;
+    margin: 50px 162px auto 240px;
     border-radius: 6px;
 }
 
 header ul ,a {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     text-decoration: none;
     list-style: none;
@@ -30,7 +29,7 @@ header ul ,a {
 }
 
 #logo_rocket img {
-    margin-left: -200px;
+    margin-left: -100px;
 }
 
 #btn-cafe button {
@@ -38,6 +37,10 @@ header ul ,a {
     border-radius: 6px;
     background-color: transparent;
     border: 1px solid #8257e5;
+}
+
+#btn-cafe button:hover {
+    background-color: #8257e534;
 }
 
 .title {
@@ -60,3 +63,78 @@ header ul ,a {
     -webkit-text-fill-color: rgba(0, 0, 0, 0.25);
     letter-spacing: -3.4px;
 }
+
+.hide {
+    display: none;
+}
+
+@media screen and (min-width:412px) and (max-width:739px){
+    .mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile header {
+        width: 433.001px;
+        height: 58.5px;
+        flex-shrink: 0;
+        margin: 37px -2px auto -3px;
+    }
+
+    .mobile header ul ,a {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        text-decoration: none;
+        list-style: none;
+        gap: 50px;
+    }
+
+    #title-mobile {
+        margin: 90px 27px 100px 28px;
+        font-size: 30px;
+    }
+
+    #button-mobile {
+        display: flex;
+        margin: auto 127px;
+        padding: 10px 25px;
+        gap: 10px;
+        border: #8257e5 1px solid ;
+        border-radius: 6px;
+        background-color: transparent;
+        font-size: 11px;
+    }
+
+    #button-mobile:hover {
+        background-color: #8257e534;
+    }
+
+    .text-mobile h1 {
+        font-size: 45px;
+        margin: 70px 66px 0px 66px ;
+    }
+
+    #second-title {
+        font-size: 50px;
+        margin: 0px 40px;
+    }
+
+    #background-img-mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #background-img-mobile img {
+        width: 266.68px; 
+        margin: auto -35px;
+    }
+
+    #background-img-mobile .img2 {
+        width: 40%;
+    }
+}
+
