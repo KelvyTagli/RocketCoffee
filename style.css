@@ -68,6 +68,10 @@ header ul ,a {
     display: none;
 }
 
+.hide-menu {
+    display: none;
+}
+
 @media screen and (min-width:412px) and (max-width:674px){
     body {
         display: flex;
@@ -76,19 +80,11 @@ header ul ,a {
         justify-content: center;
     }
 
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: 55px;
-        width: 671px;
-        margin: 50px auto;
-    }
-
     #background-img img {
         margin: auto -40px;
     }
 }
+
 .mobile {
     display: flex;
     flex-direction: column;
@@ -97,19 +93,38 @@ header ul ,a {
 }
 
 .mobile header {
-    width: 433.001px;
+    width: 94%;
     height: 58.5px;
     flex-shrink: 0;
-    margin: 37px -2px auto -3px;
+    border-bottom: 1px solid #29292E;
+    margin: 37px -2px 26px -3px;
 }
 
 .mobile header ul ,a {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     text-decoration: none;
     list-style: none;
     gap: 50px;
+}
+
+.menu-mobile {
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    gap: 26px;
+}
+
+.menu-mobile li {
+    font-size: 18px;
+    border-bottom: 1px solid #29292E;
+    padding: 14px 0px 14px 20px;
+    list-style: none;
+}
+
+.menu-mobile li:hover {
+    border-left: 4px solid #8257e5;
 }
 
 #title-mobile {
@@ -137,9 +152,12 @@ header ul ,a {
     margin: 70px 66px 0px 66px ;
 }
 
-#second-title {
+#text-title {
     font-size: 50px;
     margin: 0px 40px;
+    -webkit-text-stroke: 2px #8257e5;
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.25);
+    letter-spacing: -3.4px;
 }
 
 #background-img-mobile {
