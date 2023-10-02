@@ -72,19 +72,6 @@ header ul ,a {
     display: none;
 }
 
-@media screen and (min-width:412px) and (max-width:674px){
-    body {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    #background-img img {
-        margin: auto -40px;
-    }
-}
-
 .mobile {
     display: flex;
     flex-direction: column;
@@ -173,4 +160,23 @@ header ul ,a {
 
 #background-img-mobile .img2 {
     width: 40%;
+}
+
+@media screen and (min-width:300px) and (max-width:735px){
+
+    .desktop { 
+        display: none;
+    }
+
+    .hide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hide header {
+        width: 90vw;
+        margin: 37px -10px 20px -10px;
+    }
 }
